@@ -23,6 +23,5 @@ public class binaryadd {
         System.out.println(st);
              
 
-    }
-    
+    }  
 }

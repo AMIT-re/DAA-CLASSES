@@ -32,39 +32,39 @@
 //FIRST CODE OF STRING 
 //ANAGRAM-- two string are called anagram if both stings have same number of letters and the character in first string should match the second string irrespective of order
 
-// import java.util.*;
-// public class stringfunc
-// {
-//     public  static Boolean isanagram(String s1,String s2)
-//     {
-//         int[] c =new int[256];
-//         for(int i=0;i<s1.length();i++)
-//         {
-//             c[s1.charAt(i)]++;
-//             c[s2.charAt(i)]--;
+import java.util.*;
+public class stringfunc
+{
+    public  static Boolean isanagram(String s1,String s2)
+    {
+        int[] c =new int[256];
+        for(int i=0;i<s1.length();i++)
+        {
+            c[s1.charAt(i)]++;
+            c[s2.charAt(i)]--;
 
             
-//         }
-//         for(int i=0;i<c.length;i++)
-//         {
-//             if(c[i]!=0)
-//             {
-//                 return false;
+        }
+        for(int i=0;i<c.length;i++)
+        {
+            if(c[i]!=0)
+            {.0
+                return false;
 
-//             }
-//         }
-//         return true;
+            }
+        }
+        return true;
         
 
-//     }
-//     public static void main(String[] args)
-//     {
-//         Boolean a=isanagram("listen","silent");
-//         System.out.println(a);
+    }
+        public static void main(String[] args)
+    {
+        Boolean a=isanagram("listen","silent");
+        System.out.println(a);
 
 
-//     }
-// }
+    }
+}
 
 
 //2
@@ -306,33 +306,33 @@
 // }
 
 
-import java.util.*;
-public class stringfunc
-{
-    public static void main(String[] args)
-    {
-        int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
+// import java.util.*;
+// public class stringfunc
+// {
+//     public static void main(String[] args)
+//     {
+//         int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
 
-        findDuplicates(arr);
-    }
+//         findDuplicates(arr);
+//     }
 
-    public static void findDuplicates(int[] arr) {
-        HashMap<Integer, Integer> map = new HashMap<>();
+//     public static void findDuplicates(int[] arr) {
+//         HashMap<Integer, Integer> map = new HashMap<>();
 
-        for (int num : arr) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
-        }
+//         for (int num : arr) {
+//             map.put(num, map.getOrDefault(num, 0) + 1);
+//         }
 
-        System.out.println("Duplicate elements:");
-        for (int key : map.keySet()) {
-            if (map.get(key) > 1) {
-                System.out.println(key);
-            }
-        }
+//         System.out.println("Duplicate elements:");
+//         for (int key : map.keySet()) {
+//             if (map.get(key) > 1) {
+//                 System.out.println(key);
+//             }
+//         }
 
         
-    }
+//     }
 
     
 
-}
+// }
