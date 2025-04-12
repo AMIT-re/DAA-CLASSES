@@ -29,12 +29,28 @@ public class link
             head=head.next;
         }
     }
+    public static Node delte(Node head)
+    {   if(head==null || head.next==null)
+        {
+            return head;
+        }
+        Node temp =head;
+        while(temp.next.next!=null)
+        {
+            temp=temp.next;
+        }
+        temp.next=null;
+        
+        return head;
+        
+    }
     public static void main(String[] args)
     {   Node head=null;
         link ll=new link();
-        head=ll.inserthed(head, 10);
-        head=ll.inserthed(head, 20);
         head=ll.inserthed(head, 30);
+        head=ll.inserthed(head, 20);
+        head=ll.inserthed(head, 10);
+        head=ll.delte(head);
         ll.printll(head);
     }
     
