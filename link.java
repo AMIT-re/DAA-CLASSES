@@ -13,7 +13,6 @@ class Node
         Node next=null;
     }
 }
-
 public class link 
 {
     public static Node inserthed(Node head,int val)
@@ -28,6 +27,15 @@ public class link
             System.out.println(head.data);
             head=head.next;
         }
+    }
+    public static void count(Node head)
+    {   int c=0;
+        while(head!=null)
+        {   c++;
+            head=head.next;
+
+        }
+        System.out.println(c);
     }
     public static Node delte(Node head)
     {   if(head==null || head.next==null)
