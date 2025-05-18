@@ -32,39 +32,39 @@
 //FIRST CODE OF STRING 
 //ANAGRAM-- two string are called anagram if both stings have same number of letters and the character in first string should match the second string irrespective of order
 
-import java.util.*;
-public class stringfunc
-{
-    public  static Boolean isanagram(String s1,String s2)
-    {
-        int[] c =new int[256];
-        for(int i=0;i<s1.length();i++)
-        {
-            c[s1.charAt(i)]++;
-            c[s2.charAt(i)]--;
+// import java.util.*;
+// public class stringfunc
+// {
+//     public  static Boolean isanagram(String s1,String s2)
+//     {
+//         int[] c =new int[256];
+//         for(int i=0;i<s1.length();i++)
+//         {
+//             c[s1.charAt(i)]++;
+//             c[s2.charAt(i)]--;
 
             
-        }
-        for(int i=0;i<c.length;i++)
-        {
-            if(c[i]!=0)
-            {.0
-                return false;
+//         }
+//         for(int i=0;i<c.length;i++)
+//         {
+//             if(c[i]!=0)
+//             {
+//                 return false;
 
-            }
-        }
-        return true;
+//             }
+//         }
+//         return true;
         
 
-    }
-        public static void main(String[] args)
-    {
-        Boolean a=isanagram("listen","silent");
-        System.out.println(a);
+//     }
+//         public static void main(String[] args)
+//     {
+//         Boolean a=isanagram("listen","silent");
+//         System.out.println(a);
 
 
-    }
-}
+//     }
+// }
 
 
 //2

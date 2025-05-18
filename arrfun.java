@@ -10,7 +10,6 @@
 
 //         // Remove an element (e.g., "Green")
 //         stringList.remove("Green");
-
 //         // Convert List back to Array
 //         String[] newArray = stringList.toArray(new String[0]);
 
@@ -84,25 +83,25 @@
 
 import java.util.*;
 class arrfun{
+    public static int ls(int terget, int[] arr,int n)
+    {
+        if(terget==arr[n])
+        {
+            return n+1;
+        }
+        else{
+            return ls(terget,arr,n-1);
+        }
+    }
     public static void main(String[] args)
     {
-        int arr[]={1,2,2,2,3,4};
-        int temp[]=new int[arr.length-1];
-        int j=0;
-        for(int i=0;i<arr.length-1;i++)
-        {
-            if(arr[i+1]!=arr[j])
-            {
-                temp[j]=arr[i+1] ;
-                j++;
-            }
-        
+        int arr[]={1,2,3,4};
+        int n=arr.length-1;
+        int target =4;
+        int a=ls(target,arr,n);
+        System.out.println(a);
 
-        }        
-        for(int i=0;i<temp.length;i++)
-        {
-            System.out.println(temp[i]);
-        }    
+        
         
         
     }
