@@ -338,47 +338,47 @@
 
 //     }
 // }
+import java.util.* ;//set matrix zero
 
-
-// class class1 {
-//     public static void main(String[] args)
-//     {   
-//         int arr[][]={{1,1,1},{1,0,1},{1,1,1}};
-//         for(int i=0;i<arr.length;i++)
-//         {
-//             for(int j=0;j<arr.length;j++)
-//             {
-//                 if(arr[i][j]==0)
-//                 {
-//                     for(int x=0;x<3;x++)
-//                     {
-//                         arr[i][x]=-1;
-//                         arr[x][j]=-1;
-//                     }                    
-//                 }               
-//             }
-//         }
-//         for(int i=0;i<arr.length;i++)
-//         {
-//             for(int j=0;j<arr.length;j++)
-//             {
-//                 if(arr[i][j]==-1)
-//                 {
-//                     arr[i][j]=0;
+class class1 {
+    public static void main(String[] args)
+    {   
+        int arr[][]={{1,1,1},{1,0,1},{1,1,1}};
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=0;j<arr.length;j++)
+            {
+                if(arr[i][j]==0)
+                {
+                    for(int x=0;x<3;x++)
+                    {
+                        arr[i][x]=-1;
+                        arr[x][j]=-1;
+                    }                    
+                }               
+            }
+        }
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=0;j<arr.length;j++)
+            {
+                if(arr[i][j]==-1)
+                {
+                    arr[i][j]=0;
                     
-//                 }                
-//             }
-//         }
-//         for(int i=0;i<arr.length;i++)
-//         {
-//             for(int j=0;j<arr.length;j++)
-//             {
-//                 System.out.print(arr[i][j]+" ");
-//             }
-//             System.out.println();
-//         }
-//     }
-// }
+                }                
+            }
+        }
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=0;j<arr.length;j++)
+            {
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
 
 // class class1 {
 //     public static void main(String[] args)
